@@ -23,9 +23,10 @@
 
     let listaFruta = [frutaUm, frutaDois, frutaTres];
     let listaBebida = [bebidaUm, bebidaDois, bebidaTres];
+    let listaCompleta = listaFruta.concat(listaBebida);
 
     //SAÍDA
 
-    document.write(`As frutas a serem compradas são:`)
+    document.write(`As frutas a serem compradas são:` + listaFruta.join(", " ) + `<br> Bebidas a serem compradas são: ` + listaBebida.join(", ") + `<br> Lista completa de compras é: ` + listaCompleta.join(", "));
 
 </script>
